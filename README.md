@@ -1,4 +1,5 @@
 Multi-Agent LLM Framework for Software Engineering Tasks
+
 Overview
 
 This project implements a Multi-Agent Large Language Model (LLM) framework designed to solve software engineering tasks through collaborative reasoning and iterative refinement.
@@ -12,30 +13,38 @@ The system consists of four main agents:
 🔹 Planner Agent
 Interprets the problem description
 Breaks it into structured subtasks
+
 🔹 Code Agent
 Generates or modifies code based on the plan
 Focuses purely on implementation
+
 🔹 Reviewer Agent
 Evaluates generated code
 Suggests improvements and identifies issues
+
 🔹 Orchestrator
 Controls the workflow between agents
 Maintains state and manages iteration cycles
 
 Requirements
+
 Python 3.8 or higher
 Jupyter Notebook
 Install Dependencies(panda,numpy,matplotlib,time,json and seaborn)
 pip install openai tqdm
 
-📂 Project Structure
-.
+Project Structure
+
 ├── Code.ipynb                # Main implementation notebook
+
 ├── multi_agent_results.json  # Output results
-├── test.csv                  # Input tasks (optional)
+
+├── test.csv                  # Input tasks
+
 └── README.md                 # Documentation
 
-🚀 How to Execute the Code
+How to Execute the Code
+
 Step 1: Launch Notebook
 jupyter notebook Code.ipynb
 
@@ -61,6 +70,7 @@ Solution is correct, OR
 Maximum iterations reached
 Step 4: Output
 
+
 Results are stored in:
 
 multi_agent_results.json
@@ -79,6 +89,9 @@ Example Output Format
 }
 <img width="724" height="267" alt="1" src="https://github.com/user-attachments/assets/699a29f4-be91-4f49-ba6c-e9ae1d67f5ba" />
 
+<img width="724" height="318" alt="2" src="https://github.com/user-attachments/assets/cd808872-8c03-491b-9360-3aedf2b2100f" />
+
+<img width="724" height="234" alt="3" src="https://github.com/user-attachments/assets/64ffa900-7e28-4705-95c3-195694f9f76f" />
 
 Evaluation Metrics
 Success Rate
