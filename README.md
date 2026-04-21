@@ -1,11 +1,11 @@
 Multi-Agent LLM Framework for Software Engineering Tasks
-📌 Overview
+Overview
 
 This project implements a Multi-Agent Large Language Model (LLM) framework designed to solve software engineering tasks through collaborative reasoning and iterative refinement.
 
 Inspired by SWE-bench-style problem solving, the system decomposes complex tasks into structured steps using multiple specialized agents. The framework simulates real-world software development workflows such as planning, coding, reviewing, and iterative debugging.
 
-🧠 System Architecture
+System Architecture
 
 The system consists of four main agents:
 
@@ -21,37 +21,31 @@ Suggests improvements and identifies issues
 🔹 Orchestrator
 Controls the workflow between agents
 Maintains state and manages iteration cycles
-⚙️ Requirements
+
+Requirements
 Python 3.8 or higher
 Jupyter Notebook
-Install Dependencies
+Install Dependencies(panda,numpy,matplotlib,time,json and seaborn)
 pip install openai tqdm
 
 📂 Project Structure
 .
 ├── Code.ipynb                # Main implementation notebook
 ├── multi_agent_results.json  # Output results
-├── dataset/                  # Input tasks (optional)
+├── test.csv                  # Input tasks (optional)
 └── README.md                 # Documentation
 
 🚀 How to Execute the Code
 Step 1: Launch Notebook
 jupyter notebook Code.ipynb
 
-Step 2: Set API Key
-
-Inside the notebook, configure your API key:
-
-import os
-os.environ["OPENAI_API_KEY"] = "your_api_key_here"
-
-Step 3: Run All Cells
+Step 2: Run All Cells
 
 Execute all cells sequentially:
 
 Cell → Run All
 
-Step 4: Execution Flow
+Step 3: Execution Flow
 
 For each task, the system performs:
 
@@ -65,7 +59,7 @@ Iteration Loop
 Repeats until:
 Solution is correct, OR
 Maximum iterations reached
-Step 5: Output
+Step 4: Output
 
 Results are stored in:
 
@@ -83,25 +77,18 @@ Example Output Format
     }
   ]
 }
+<img width="724" height="267" alt="1" src="https://github.com/user-attachments/assets/699a29f4-be91-4f49-ba6c-e9ae1d67f5ba" />
 
-📊 Evaluation Metrics
+
+Evaluation Metrics
 Success Rate
 Percentage of correctly solved tasks
 Average Iterations
 Number of refinement cycles per task
 Reasoning Trace
 Logs of agent interactions (plan → code → review)
-⚠️ Known Limitations
-Generated solutions may be syntactically correct but functionally incorrect
-Reviewer validation is text-based (no execution)
-Iterative feedback may not always lead to convergence
-Some outputs may contain placeholder responses (e.g., “LLM RESPONSE FOR”)
-✅ Future Improvements
-Integrate execution-based validation with test cases
-Improve prompt engineering for each agent
-Enhance reviewer feedback quality
-Add support for multi-file and real-world repositories
-📚 Conclusion
+
+Conclusion
 
 This project demonstrates that:
 
